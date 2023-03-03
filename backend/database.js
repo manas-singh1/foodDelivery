@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb+srv://hmseverus19:manassingh@cluster0.t0knrdv.mongodb.net/foodDatabase?retryWrites=true&w=majority'
-// const mongoURI='mongodb://hmseverus19:manassingh@ac-qlh1vez-shard-00-00.t0knrdv.mongodb.net:27017,ac-qlh1vez-shard-00-01.t0knrdv.mongodb.net:27017,ac-qlh1vez-shard-00-02.t0knrdv.mongodb.net:27017/foodDatabase?ssl=true&replicaSet=atlas-dvaycj-shard-0&authSource=admin&retryWrites=true&w=majority'
-
+const mongoURI ='removed due to security reason'
 const mongoDB = async () => {
     await mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
         if (err) console.log("----", err)
